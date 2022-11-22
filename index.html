@@ -1,0 +1,283 @@
+<!-- <%@ language="javascript"%> -->
+<!DOCTYPE html>
+<html lang="en-150">
+	
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" media="all"> <!--bootswatch-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--google icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome 20px-sm-->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104312945-1', 'auto');
+	  ga('send', 'pageview');
+	  
+	  
+	  function changeLangEn() {
+		  var titulo = "Simple Calculators";
+		  var titulo2 = "In Medicine & Critical Care";
+		  var contents = "Contents";
+		  var contents2 = "Some time-savers for daily use (in English & Spanish)";
+		  var nutrition_calc = "Parenteral Nutrition";
+		  var nutrition_calc2 = "Mini Calculator for Parenteral Nutrition in the Critically Ill Adult";
+		  var pedi_calc = "Pediatric Fluidotherapy";
+		  var pedi_calc2 = "Fluids and Drugs Calculator for Children in the OR [unfinished]";
+		  var opioid_calc = "Opioid Calculator"
+		  var opioid_calc2 = "Opioid Equivalence, Rotation and Tapering"
+		  var pghacker_calc = "PG-HACKER Score";
+		  var pghacker_calc2 = "MACE cumulative incidence for diabetic patients post-MI [unpublished]";
+		  var contacto = "Contact";
+		  var nutritionLink = document.getElementById("nutritionLink");
+		  var pedLink = document.getElementById("pedLink");
+		  var opioidLink = document.getElementById("opioidLink");
+		  var daceLink = document.getElementById("daceLink");
+		  
+		  document.getElementById("titulo").innerHTML = titulo;
+		  document.getElementById("titulo2").innerHTML = titulo2;
+		  document.getElementById("contents").innerHTML = contents;
+		  document.getElementById("contents2").innerHTML = contents2;
+		  document.getElementById("nutrition_calc").innerHTML = nutrition_calc;
+		  document.getElementById("nutrition_calc2").innerHTML = nutrition_calc2;
+		  document.getElementById("pedi_calc").innerHTML = pedi_calc;
+		  document.getElementById("pedi_calc2").innerHTML = pedi_calc2;
+		  document.getElementById("opioid_calc").innerHTML = opioid_calc;
+		  document.getElementById("opioid_calc2").innerHTML = opioid_calc2;
+		  document.getElementById("pghacker_calc").innerHTML = pghacker_calc;
+		  document.getElementById("pghacker_calc2").innerHTML = pghacker_calc2;
+		  document.getElementById("contacto").innerHTML = contacto;
+		  nutritionLink.setAttribute('href', "./nutrition_calc.html");
+		  pedLink.setAttribute('href', "./pedi_calc.html");
+		  opioidLink.setAttribute('href', "./opioids_m.html");
+		  daceLink.setAttribute('href', "./dace.html");
+	  }
+	  
+	  function changeLangEs() {
+		  var titulo = "Mini Calculadoras";
+		  var titulo2 = "En Medicina & Cuidados Cr&iacute;ticos";
+		  var contents = "Contenidos";
+		  var contents2 = "Ahorrando tiempo en la pr&aacute;ctica diaria (en Ingl&eacute;s & Espa&ntilde;ol)";
+		  var nutrition_calc = "Nutrici&oacute;n Parenteral";
+		  var nutrition_calc2 = "Calculadora Abreviada para Nutrici&oacute;n Parenteral en Adultos";
+		  var pedi_calc = "Flu&iacute;dos Pediatr&iacute;a";
+		  var pedi_calc2 = "Calculadora para Flu&iacute;dos y F&aacute;rmacos en Pediatr&iacute;a [en construcci&oacute;n]";
+		  var opioid_calc = "Calculadora de opioides"
+		  var opioid_calc2 = "Equivalencia de Opioides, Rotaci&oacute;n y Reducci&oacute;n"
+		  var pghacker_calc = "PG-HACKER Score";
+		  var pghacker_calc2 = "Incidencia acumulada de MACE en diab&eacute;ticos post-IAM [en revisi&oacute;n]";
+		  var contacto = "Contacto";
+		  var nutritionLink = document.getElementById("nutritionLink");
+		  var pedLink = document.getElementById("pedLink");
+		  var opioidLink = document.getElementById("opioidLink");
+		  var daceLink = document.getElementById("daceLink");
+		  
+		  document.getElementById("titulo").innerHTML = titulo;
+		  document.getElementById("titulo2").innerHTML = titulo2;
+		  document.getElementById("contents").innerHTML = contents;
+		  document.getElementById("contents2").innerHTML = contents2;
+		  document.getElementById("nutrition_calc").innerHTML = nutrition_calc;
+		  document.getElementById("nutrition_calc2").innerHTML = nutrition_calc2;
+		  document.getElementById("pedi_calc").innerHTML = pedi_calc;
+		  document.getElementById("pedi_calc2").innerHTML = pedi_calc2;
+		  document.getElementById("opioid_calc").innerHTML = opioid_calc;
+		  document.getElementById("opioid_calc2").innerHTML = opioid_calc2;
+		  document.getElementById("pghacker_calc").innerHTML = pghacker_calc;
+		  document.getElementById("pghacker_calc2").innerHTML = pghacker_calc2;
+		  document.getElementById("contacto").innerHTML = contacto;
+		  nutritionLink.setAttribute('href', "./nutrition_calc.html");
+		  pedLink.setAttribute('href', "./pedi_calc.html");
+		  opioidLink.setAttribute('href', "./opioids_m.html");
+		  daceLink.setAttribute('href', "./dace.html");
+	  }
+	  
+	  
+	</script>
+			
+	<style>
+		.input-lg {
+		  font-size: 30px;
+		}
+		.input {
+		  font-size: 20px;
+		}
+		
+		
+		.panel {
+		    border: 1px solid #1d4249; 
+		    border-radius:0;
+		    transition: box-shadow 0.5s;
+		}
+
+		.panel:hover {
+		    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+		    background-color: #fff !important;
+		}		
+		.panel1:hover {
+		    border: 1px solid #d04949;
+		    color: #d04949;
+		}
+		.panel2:hover {
+		    border: 1px solid #6995b0;
+		    color: #6995b0;
+		}
+		.panel3:hover {
+		    border: 1px solid #cca300;
+		    color: #cca300;
+		}
+
+		.panel1 .button:hover {
+		    border: 1px solid #d04949;
+		    background-color: #d04949 !important;
+		    color: #d04949;
+		}
+		.panel2 .button:hover {
+		    border: 1px solid #6995b0;
+		    background-color: #6995b0 !important;
+		    color: #6995b0;
+		}
+		.panel3 .button:hover {
+		    border: 1px solid #cca300;
+		    background-color: #cca300 !important;
+		    color: #cca300;
+		}
+
+		/*.panel-footer .btn:hover {
+		    border: 1px solid #f4511e;
+		    background-color: #fff !important;
+		    color: #f4511e;
+		}*/
+		
+		.panel-heading {
+		    color: #fff !important;
+		    background-color: #1d4249 !important;
+		    padding: 25px;
+		    border-bottom: 1px solid transparent;
+		    border-top-left-radius: 0px;
+		    border-top-right-radius: 0px;
+		    border-bottom-left-radius: 0px;
+		    border-bottom-right-radius: 0px;
+		}
+
+		.panel-footer {
+		    background-color: #fff !important;
+		}
+
+		.panel-footer h3 {
+		    font-size: 32px;
+		}
+
+		.panel-footer h4 {
+		    color: #aaa;
+		    font-size: 14px;
+		}
+
+		.panel-footer .btn {
+		    margin: 15px 0;
+		    background-color: #1d4249;
+		    color: #fff;
+		}
+		
+		a:link {
+			color: #1d4249 !important;
+			text-decoration: none;
+		} 
+		
+		a:visited {
+			color: #1d4249;
+			text-decoration: none;
+		}
+		
+		.panel1 a:hover {
+			color: #d04949;
+			text-decoration: none;
+		}
+		.panel2 a:hover {
+			color: #6995b0;
+			text-decoration: none;
+		}
+		.panel3 a:hover {
+			color: #cca300;
+			text-decoration: none;
+		}
+		
+	</style>		
+			
+			
+			
+	<title>Calculators for Medicine & Intensive Care</title>
+</head>
+
+
+<body>
+
+<div id="intro" class="jumbotron text-center">
+  <h1><span id="titulo"> Simple Calculators </span> &nbsp; <span class="fa fa-calculator"></a></span></h1> 
+  <h3><span id="titulo2"> In Medicine & Critical Care</span> </h3> 
+  	
+</div> <!--EOF jumbotron-->
+<hr>
+
+
+<div id="calculators" class="container-fluid">
+  <div class="text-center">
+    <h2><span id="contents"> Contents</span> </h2>
+    <h4><span id="contents2"> Some time-savers for daily use</span> </h4>
+	<h3></h3>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel3 panel-default text-center">
+		<a id="nutritionLink" href="./nutrition_calc.html" target="blank">
+        <div class="button panel-heading">
+          <h1><span id="nutrition_calc"> Parenteral Nutrition</span> </h1>
+        </div> <!--EOF panel-heading-->
+        <div class="panel3 panel-body">
+          <p><span id="nutrition_calc2"> Mini Calculator for Parenteral Nutrition in the Critically Ill Adult</span> </p>
+        </div> <!--EOF panel-body-->
+		</a>
+      </div> <!--EOF panel-->    
+    </div>  <!--EOF column-->   
+	
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel2 panel-default text-center">
+		<a id="pedLink" href="./pedi_calc.html" target="blank">
+        <div class="button panel-heading">
+          <h1><span id="pedi_calc"> Pediatric Fluidotherapy</span> </h1>
+        </div> <!--EOF panel-heading-->
+        <div class="panel2 panel-body">
+          <p><span id="pedi_calc2"> Fluids and Drugs Calculator for Children in the OR [unfinished]</span> </p>
+        </div> <!--EOF panel-body-->
+		</a>
+      </div> <!--EOF panel-->    
+    </div>  <!--EOF column-->
+	
+    <!-- <div class="col-sm-4 col-xs-12">
+      <div class="panel panel1 panel-default text-center">
+		<a id="opioidLink" href="./opioids_m.html" target="blank">
+        <div class="button panel-heading">
+		  <h1><span id="opioid_calc"> Opioid Calculator</span> </h1>
+        </div> 
+        <div class="panel1 panel-body">
+		  <span id="opioid_calc2"> Opioid Equivalence, Rotation and Tapering</span>
+        </div>
+		</a>
+      </div> 
+    </div>  EOF column -->
+	
+  </div> <!--EOF row-->
+  
+</div> <!--EOF container--> 
+	
+
+
+
+</body>	
+</html>
